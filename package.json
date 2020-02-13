@@ -8,15 +8,20 @@
     "bcrypt-nodejs": "0.0.3",
     "bluebird": "^3.7.2",
     "body-parser": "^1.19.0",
+    "chalk": "^3.0.0",
     "concurrently": "^5.1.0",
     "dotenv": "^8.2.0",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "express-validator": "^6.4.0",
+    "fs-extra": "^8.1.0",
+    "globby": "^11.0.0",
+    "loglevel": "^1.6.7",
     "mongoose": "^5.8.12",
     "nodemailer": "^6.4.2",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "yargs": "^15.1.0"
   },
   "devDependencies": {
     "@types/async": "^3.0.7",

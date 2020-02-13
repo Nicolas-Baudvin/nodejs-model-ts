@@ -2,8 +2,8 @@ import http from 'http';
 import app from '.'
 import errorHandler from 'errorhandler';
 
-const normalizePort = (val: any) => {
-    const port = parseInt(val, 10);
+const normalizePort = (val: string): number | string | boolean => {
+    const port: number = Number(val);
 
     if (isNaN(port)) {
         return val;
@@ -13,13 +13,10 @@ const normalizePort = (val: any) => {
     }
     return false;
 };
-const port = normalizePort(process.env.PORT || "5000");
+const port: string | number | boolean = normalizePort(process.env.PORT || "5000");
 
 app.set("port", port);
 
-/**
- * Error Handler. Provides full stack - remove for production
- */
 app.use(errorHandler());
 
 const server = http.createServer(app);
